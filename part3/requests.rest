@@ -1,0 +1,19 @@
+GET http://phonebook-ltttai.fly.dev/api/persons
+
+###
+GET http://localhost:3001/api/info
+
+###
+GET http://localhost:3001/api/persons/5
+
+###
+DELETE http://localhost:3001/api/persons/2
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+ {
+    "name": "Ada",
+    "number": 3
+ }
