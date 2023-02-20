@@ -4,8 +4,6 @@ const reverse = (string) => {
 
 const average = (array) => {
   const reducer = (sum, item) => {
-    console.log("sum", sum);
-    console.log("item", item);
     return sum + item;
   };
 
