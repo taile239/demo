@@ -9,3 +9,11 @@ Content-Type: application/json
     "author": "Tai Le",
     "url": "abc"
 }
+
+###
+PUT http://localhost:3003/api/blogs/63eda05cfed003c41d3e338b
+Content-Type: application/json
+
+{
+    "likes": 5,
+}
