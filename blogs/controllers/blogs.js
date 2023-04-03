@@ -31,4 +31,6 @@ blogRouter.post("/", (request, response) => {
   });
 });
 
+blogRouter.put(`/:id`);
+
 module.exports = blogRouter;

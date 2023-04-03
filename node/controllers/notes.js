@@ -26,7 +26,6 @@ notesRouter.delete("/:id", async (request, response, next) => {
 
 notesRouter.post("/", async (request, response, next) => {
   const body = request.body;
-
   if (!body.content) {
     return response.status(400).json({
       error: "content missing",
@@ -50,6 +49,7 @@ notesRouter.put("/:id", async (request, response, next) => {
     { content, important },
     { new: true, runValidators: true, context: "query" }
   );
+  response.status(204).end();
 });
 
 module.exports = notesRouter;
